@@ -33,7 +33,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 145%;
+    height: 150%;
 }
 
 nav ul {
@@ -121,7 +121,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    line-height: 1.5;
+    line-height: 0.1;
 }
 
 /* Animation Styles */
