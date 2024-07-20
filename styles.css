@@ -87,6 +87,7 @@ main {
     width: 100%; /* Resize to 50% of the container's width */
     height: 100%; /* Resize to 50% of the container's height */
     object-fit: cover;
+    border-radius: 8px;
     margin: 10px; /* Add space between images */
     border-radius: 0; /* Remove corner rounds */
 }
