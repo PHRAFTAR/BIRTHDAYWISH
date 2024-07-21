@@ -33,7 +33,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150%;
+    height: 145%;
 }
 
 nav ul {
@@ -87,15 +87,14 @@ main {
     width: 100%; /* Resize to 50% of the container's width */
     height: 100%; /* Resize to 50% of the container's height */
     object-fit: cover;
-    border-radius: 8px;
     margin: 10px; /* Add space between images */
     border-radius: 0; /* Remove corner rounds */
 }
 
 /* Specific sizes for each image */
 .item.photo1 {
-    width: 250px;
-    height: 250px;
+    width: 80%;
+    height: px;
 }
 
 .item.photo2 {
@@ -122,7 +121,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    line-height: 0.1;
+    line-height: .5;
 }
 
 /* Animation Styles */
@@ -135,5 +134,41 @@ footer {
     50% {
         opacity: 0;
     }
+}
+
+/*----------------------------------*/
+
+/* Additional styles for the birthday message and photo */
+.birthday-message {
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text alignment */
+}
+
+.birthday-photo {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 20px auto; /* Center the image */
+    border: px solid #fcfbfb; /* Add a border to the image */
+    width: 70%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    margin-right: px;
+    margin-left:px;
+    margin-top: 0%;
+    margin-bottom: 0px;
+    
+}
+/* Additional styles for the URL link below the image */
+.photo-link {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+    font-size: 18px; /* Font size */
+}
+
+.photo-link:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
