@@ -72,34 +72,26 @@ main {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    justify-items: center;
+    justify-items: center; /* Center images horizontally */
 }
 
 .item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     overflow: hidden;
     text-align: center;
-}   
+    width: 100%; /* Ensure item takes full width of the container */
+    max-width: 300px; /* Increased maximum width for larger images */
+    height: 400px; /* Adjust height based on content */
+    margin: 20px;
+}
 
 .item img {
-    width: 100%; /* Resize to 50% of the container's width */
-    height: 100%; /* Resize to 50% of the container's height */
-    object-fit: cover;
-    margin: 10px; /* Add space between images */
-    border-radius: 0; /* Remove corner rounds */
-}
-
-/* Specific sizes for each image */
-.item.photo1 {
-    width: 80%;
-    height: px;
-}
-
-.item.photo2 {
-    width: 200px;
-    height: 200px;
+    width: 100%; /* Ensure images take full width of their container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners */
 }
 
 /* Add specific styles for more images as needed */
@@ -136,8 +128,6 @@ footer {
     }
 }
 
-/*----------------------------------*/
-
 /* Additional styles for the birthday message and photo */
 .birthday-message {
     margin-bottom: 20px;
@@ -148,16 +138,10 @@ footer {
     display: block;
     max-width: 70%;
     height: auto;
-    margin: 20px auto; /* Center the image */
-    border: px solid #fcfbfb; /* Add a border to the image */
-    width: 70%; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
-    margin-right: px;
-    margin-left:px;
-    margin-top: 0%;
-    margin-bottom: 0px;
-    
+    margin: 20px auto; /* Center the image horizontally */
+    border: 1px solid #fcfbfb; /* Corrected border style */
 }
+
 /* Additional styles for the URL link below the image */
 .photo-link {
     display: block;
@@ -171,4 +155,3 @@ footer {
 .photo-link:hover {
     text-decoration: underline; /* Underline on hover */
 }
-
