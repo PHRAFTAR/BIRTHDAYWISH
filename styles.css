@@ -16,13 +16,10 @@ header {
     color: #fff;
     padding: 1em;
     text-align: center;
-    position: fixed; /* Fix the header at the top */
-    top: 0; /* Align the header to the top */
-    left: 0; /* Align the header to the left */
-    width: 100%; /* Full width of the viewport */
-    z-index: 1000; /* Ensure it stays above other content */
-    height: 100px; /* Adjust as needed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    position: relative;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
@@ -64,11 +61,16 @@ nav ul li a:hover {
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 120px 20px 20px; /* Add padding-top to prevent overlap */
+    padding: 20px;
 }
 
 .section {
     margin-bottom: 40px;
+}
+
+/* Added margin to text sections to create space before images */
+.text-section, .birthday-message {
+    margin-bottom: 30px; /* Space between text and gallery */
 }
 
 .gallery {
@@ -76,6 +78,8 @@ main {
     flex-direction: column;
     align-items: center; /* Center items horizontally */
     gap: 20px; /* Space between items */
+    margin-top: 20px; /* Add space above the gallery */
+    margin-bottom: 20px; /* Add space below the gallery */
 }
 
 .item {
@@ -91,6 +95,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+    margin-top: 20px; /* Space above each item */
 }
 
 .item img, .item video {
@@ -154,7 +159,7 @@ footer {
 }
 
 .birthday-message {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Space between text and gallery */
     text-align: justify;
 }
 
@@ -202,10 +207,6 @@ footer {
 @keyframes zoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
-}
-
-/* The
-
 }
 
 /* The Close Button */
